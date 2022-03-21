@@ -1,0 +1,6 @@
+.footer {
+    min-height: 2rem;
+    padding-top: 1rem;
+    position: relative;
+    background: linear-gradient(90deg, rgb(139, 139, 139) 0%, rgba(247, 245, 245, 1) 35%, rgb(207, 207, 207) 100%);
+}

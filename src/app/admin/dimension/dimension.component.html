@@ -1,0 +1,8 @@
+<div class="outer-container row w-100 m-0">
+
+    <div class="col-md-3 col-sm-6 col-xs-6" *ngFor="let item of counts; let i = index">
+        <div class="fix-dimensions">
+            <app-button-tile (click)="callForSubmit(i)"></app-button-tile>
+        </div>
+    </div>
+</div>

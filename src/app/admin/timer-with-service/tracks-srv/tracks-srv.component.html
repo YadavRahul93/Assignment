@@ -1,0 +1,8 @@
+<div class="all-tracks">
+    <p class="text-center" *ngIf="trackData.length == 0; else lengthValid">
+        No Tracks Available
+    </p>
+    <ng-template #lengthValid>
+        <p *ngFor="let item of trackData">{{item}}</p>
+    </ng-template>
+</div>

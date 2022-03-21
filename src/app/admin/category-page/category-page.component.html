@@ -1,0 +1,22 @@
+<div class="category">
+    <div class="filters">
+        <div class="filters-opt">
+            <button [ngClass]="isGrid ? 'activeGrid': 'inactiveGrid'" (click)="changeToGrid()"><mat-icon aria-hidden="false" aria-label="grid">grid_on</mat-icon>
+            </button>
+            <button [ngClass]=" !isGrid ? 'activeGrid': 'inactiveGrid'" (click)="changeToList()"><mat-icon aria-hidden="false" aria-label="list">view_list</mat-icon></button>
+            <mat-form-field appearance="outline">
+                <mat-label>SORT BY</mat-label>
+                <mat-select [(ngModel)]="selectedValue" name="filter" [disableOptionCentering]="true" (selectionChange)="triggerSort($event)">
+                    <mat-option *ngFor="let filter of filters" [value]="filter.value">
+                        {{filter.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div [ngClass]=" !isGrid ? 'reset-width': ' w-100 m-0'" class="row">
+        <div [ngClass]="isGrid ? 'col-md-3' : 'col-md-6'" class="mb-4 col-xs-6" *ngFor="let product of products">
+            <app-tile [singleProduct]="product"></app-tile>
+        </div>
+    </div>
+</div>

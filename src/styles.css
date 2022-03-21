@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.parent-timer {
+    padding-top: 1rem;
+}
+
+.timer-track {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 1rem;
+    background-color: #B8B8B8;
+    padding: 2rem;
+    min-height: 20rem;
+    margin-top: 4rem;
+    border-radius: 1.25rem;
+    box-shadow: 8px 5px 15px #989898;
+}
+
+.countdown-timer,
+.timer-card {
+    background-color: #D8D8D8;
+    min-height: 125px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+label.heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+p.current-time {
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.err {
+    color: red;
+}
+
+.timer-card button {
+    width: 80px;
+    margin: 10px 5px;
+}
+
+.timer-card form {
+    padding-top: 20px;
+}
+
+.row.event-tracks {
+    width: 100%;
+    margin: 0;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    min-height: 150px;
+}
+
+.all-tracks {
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    margin-top: 1rem;
+    overflow-y: scroll;
+    padding: 4px;
+    min-height: 80%;
+}
+
+.row.counts .col-md-6.col-xs-6 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+p.bottom-title {
+    font-size: 1.25rem;
+    margin-top: 6px;
+}
+
+span.started,
+span.paused {
+    color: #404040;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

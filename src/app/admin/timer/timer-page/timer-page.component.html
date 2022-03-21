@@ -1,0 +1,29 @@
+<div class="parent-timer">
+    <div class="timer-track">
+        <div class="row">
+            <div class="col-md-5 col-xs-12">
+                <app-count-down [timerCount]="timeLeft"></app-count-down>
+            </div>
+            <div class="col-md-7 col-xs-12">
+                <app-timer-limit (startDownData)="getStartData($event)" (pauseDownData)="getPauseData($event)" (triggerReset)="resetEvent()" (currTimerData)="getcurrTimerData($event)"></app-timer-limit>
+            </div>
+        </div>
+        <div class="row event-tracks">
+            <div class="col-md-5 col-xs-12">
+                <app-tracks [trackData]="trackData"></app-tracks>
+            </div>
+            <div class="col-md-7 col-xs-12">
+                <div class="row counts">
+                    <div class="col-md-6 col-xs-6">
+                        <span class="started"> {{startCount}} </span>
+                        <p class="bottom-title"> Started</p>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <span class="paused"> {{pauseCount}} </span>
+                        <p class="bottom-title">Paused</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

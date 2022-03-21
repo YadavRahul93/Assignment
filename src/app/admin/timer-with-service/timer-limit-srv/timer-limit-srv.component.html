@@ -1,0 +1,14 @@
+<div class="timer-card">
+    <form>
+        <label for="countdown">Enter Timer Limit :</label>
+        <input name="countdown" type="number" [(ngModel)]="countdownTime" placeholder="Enter the Count Down">
+        <div class="button-sec">
+            <button *ngIf="isStart" class="btn btn-primary" (click)="triggerCountDown()">Start</button>
+            <button *ngIf="!isStart" class="btn btn-info" (click)="triggerPause()"> Pause</button>
+            <button class="btn btn-danger" (click)="triggerReset()">Reset</button>
+        </div>
+        <div class="err" *ngIf="countdownTime <= 0 && err">
+            <span>Please enter number greater than 0</span>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,132 @@
+.outer-container {
+    height: 90%;
+    background: rgb(198, 198, 198);
+    background: linear-gradient(90deg, rgba(198, 198, 198, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(239, 239, 239, 1) 100%);
+    /* position: relative; */
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 85%;
+}
+
+.box1 {
+    background-color: #A0A0A0;
+}
+
+.box2 {
+    background-color: #A8A8A8;
+}
+
+.box3 {
+    background-color: #B0B0B0;
+}
+
+.box4 {
+    background-color: #C0C0C0;
+}
+
+.box5 {
+    background-color: #D0D0D0;
+}
+
+.box6 {
+    background-color: #D8D8D8;
+}
+
+.box7 {
+    background-color: #E0E0E0;
+    height: 55%;
+    width: 80%;
+}
+
+
+/* .box {
+    height: 50%;
+    width: 50%;
+    background: linear-gradient(45deg, #1b5b66, #109ca7);
+    border-radius: 15px;
+    border: solid;
+    position: relative;
+    margin: 0 auto;
+    animation: crescendo 1.75s alternate infinite ease-in;
+    box-shadow: .2px .2px .5px #fff, 0 0 .2em #fff, 0 0 0.2em #fff;
+} */
+
+
+/* .box:hover {
+    background: linear-gradient(45deg, #3188b1, #42a9d8);
+    transform: scale(1.05);
+} */
+
+
+/* @keyframes crescendo {
+    0% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+} */
+
+.text {
+    font-family: arial;
+    color: #383838;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.boxshadow {
+    height: 10px;
+    width: auto;
+    background-color: #000;
+    border-radius: 50%;
+    filter: blur(10px);
+    margin: 50px auto;
+    position: relative;
+    animation: shadowmove 3s ease-in-out infinite;
+}
+
+@keyframes shadowmove {
+    0% {
+        opacity: .4;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: .4;
+    }
+}
+
+.text {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    transform-style: preserve-3d;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: .75rem;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(-360deg);
+    }
+}

@@ -1,0 +1,26 @@
+img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.card.h-100 {
+    border-radius: 0.5rem !important;
+    box-shadow: 1px 1px 8px 1px grey;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.card.h-100:hover {
+    transform: scale(1.05);
+    transition: .5s ease-in-out;
+}
+
+.promos {
+    top: 5px;
+}
+
+.img-section img {
+    border-radius: 0.5rem 0.5rem 0 0;
+}

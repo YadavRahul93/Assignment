@@ -1,0 +1,70 @@
+.activeGrid {
+    color: white;
+    border: 1.5px solid lightgrey;
+    background-color: #888888;
+    box-shadow: 2px 0px 8px 1px black;
+    margin: 0 6px;
+}
+
+.category {
+    position: relative;
+    padding-top: 1rem;
+    height: auto;
+    background: rgb(198, 198, 198);
+    background: linear-gradient(90deg, rgba(198, 198, 198, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(239, 239, 239, 1) 100%);
+}
+
+.inactiveGrid {
+    color: black;
+    margin: 0 6px;
+}
+
+.reset-width {
+    width: 80%;
+    margin: auto;
+}
+
+.filters {
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+    margin: 16px auto;
+    background-color: #C8C8C8;
+}
+
+.filters-opt {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+button .mat-icon {
+    margin-top: 4px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+}
+
+::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    border-radius: 0 !important;
+    padding: initial !important;
+    margin: 6px;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: transparent;
+}
+
+
+/* ::ng-deep span.mat-select-min-line {
+    line-height: 2;
+} */
